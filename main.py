@@ -5,8 +5,8 @@ import time
 # command = 'python command_example.py'
 
 os.chdir(os.path.expanduser('~/ParlAI'))
-# command = ['python parlai/scripts/safe_interactive.py', '-t blended_skill_talk', '-mf zoo:blender/blender_3B/model']
-command = 'python parlai/scripts/safe_interactive.py -t blended_skill_talk -mf zoo:blender/blender_3B/model --include-personas False'
+# command = ['python parlai/scripts/safe_interactive.py', '-t blended_skill_talk', '-mf zoo:blender/blender_90M/model']
+command = 'python parlai/scripts/safe_interactive.py -t blended_skill_talk -mf zoo:blender/blender_90M/model --include-personas False'
 proc = subprocess.Popen(command, shell=True, stdin=subprocess.PIPE, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
 # b = process.stdout.readline()#.decode("utf-8").strip()
 # b = b.decode("utf-8")
